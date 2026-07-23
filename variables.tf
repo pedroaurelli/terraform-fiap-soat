@@ -1,5 +1,6 @@
 variable "bucket_name" {
   description = "nome utilizado no bucket"
+  default = "tf-fiap-soat-pedro-aureliano-aula4-bucket"
 }
 
 variable "tags_dev" {
