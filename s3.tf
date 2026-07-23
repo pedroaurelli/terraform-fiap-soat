@@ -17,3 +17,9 @@ resource "aws_s3_bucket" "bucket-aula3" {
 
   tags = var.tags_dev
 }
+
+resource "aws_s3_bucket" "bucket-aula5-datasource" {
+  bucket = "${data.aws_s3_bucket.manual-bucket.id}-5"
+
+  tags = var.tags_dev
+}

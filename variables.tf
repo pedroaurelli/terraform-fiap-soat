@@ -24,3 +24,7 @@ variable "region_default" {
 variable "region_sp" {
   default = "sa-east-1"
 }
+
+variable "instance_type" {
+  default = "t3.micro"
+}
