@@ -1,28 +1,19 @@
 resource "aws_s3_bucket" "bucket-backend" {
   bucket = "tf-state-backend-fiap-soat-pedro-aureliano-bucket"
 
-  tags = {
-    Name        = "tfstate"
-    Environment = "Production"
-  }
+  tags = var.tags_prod
 }
 
 resource "aws_s3_bucket" "bucket-aula" {
   provider = "aws.sp"
-  bucket = "tf-bucket-aula2-pedro-aureliano-bucket"
+  bucket = "${var.bucket_name}-2"
 
-  tags = {
-    Name        = "tf-bucket-aula2"
-    Environment = "Development"
-  }
+  tags = var.tags_dev
 }
 
 resource "aws_s3_bucket" "bucket-aula3" {
   provider = "aws.sp"
-  bucket = "tf-bucket-aula3-pedro-aureliano-bucket"
+  bucket = "${var.bucket_name}-3"
 
-  tags = {
-    Name        = "tf-bucket-aula3"
-    Environment = "Development"
-  }
+  tags = var.tags_dev
 }
