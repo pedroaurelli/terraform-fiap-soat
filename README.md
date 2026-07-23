@@ -2,8 +2,9 @@
 2. Create a AWS IAM USER with CLI Access
 3. Configure AWS CLI with IAM User Credentials
 4. Create a provider.tf file
-5. terraform plan
-6. terraform apply
+5. terraform init
+6. terraform plan
+7. terraform apply
 
 ---
 
