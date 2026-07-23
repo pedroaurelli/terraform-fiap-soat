@@ -7,12 +7,22 @@ resource "aws_s3_bucket" "bucket-backend" {
   }
 }
 
-# resource "aws_s3_bucket" "bucket-aula" {
-#   provider = "aws.sp"
-#   bucket = "tf-bucket-aula2-pedro-aureliano-bucket"
+resource "aws_s3_bucket" "bucket-aula" {
+  provider = "aws.sp"
+  bucket = "tf-bucket-aula2-pedro-aureliano-bucket"
 
-#   tags = {
-#     Name        = "tf-bucket-aula2"
-#     Environment = "Development"
-#   }
-# }
+  tags = {
+    Name        = "tf-bucket-aula2"
+    Environment = "Development"
+  }
+}
+
+resource "aws_s3_bucket" "bucket-aula3" {
+  provider = "aws.sp"
+  bucket = "tf-bucket-aula3-pedro-aureliano-bucket"
+
+  tags = {
+    Name        = "tf-bucket-aula3"
+    Environment = "Development"
+  }
+}
